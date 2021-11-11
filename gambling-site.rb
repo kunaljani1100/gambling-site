@@ -5,12 +5,7 @@ require './user'
 require 'digest'
 User.auto_upgrade!
 
-if development
-  @link = "http://localhost:5000"
-else
-  @link = "http://localhost:4567"
-end
-
+@link = "http://localhost:5000"
 
 get '/' do
   erb :home
