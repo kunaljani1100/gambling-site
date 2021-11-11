@@ -1,5 +1,5 @@
 <div class = "betting-info" style="top: 10vh; left: 42vw">
-<form class="" action="http://localhost:4567/bet" method="post">
+<form class="" action="<%= @link %>/bet" method="post">
   <div class = "money">
     <p><input type="number" name="money" placeholder="Bet Money" min=10 max=10000/></p>
   </div>
@@ -47,7 +47,7 @@
 </div>
 </p>
 <div class = "logout" style="top: 8vh">
-<form class="" action="http://localhost:4567/logout" method="post">
+<form class="" action="<%= @link %>/logout" method="post">
   <input type="submit" name="" value="Logout">
 </form>
 </div>
