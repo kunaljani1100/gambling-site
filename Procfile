@@ -1,1 +1,1 @@
-web: ruby app/gambling-site.rb
+web: ruby gambling-site.rb

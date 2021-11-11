@@ -1,0 +1,54 @@
+<div class = "betting-info" style="top: 10vh; left: 42vw">
+<form class="" action="http://localhost:4567/bet" method="post">
+  <div class = "money">
+    <p><input type="number" name="money" placeholder="Bet Money" min=10 max=10000/></p>
+  </div>
+  <p>
+  <div class = "dicevalue">
+    <p><input type="number" name="dicevalue" min=1 max=6 placeholder="Value"/></p>
+  </div>
+  </p>
+  <br>
+  <div class = "submitbutton">
+    <p><input type="submit" name="" value="Bet"></p>
+  </div>
+</form>
+</div>
+<div class = "game-results" style="top: 35vh; left: 25vw">
+<div class = "this-game-result">
+<table style="border: 1px solid black">
+  <tr style="border: 1px solid black">
+    <td style="border: 1px solid black">Game Win</td>
+    <td style="border: 1px solid black">Game Loss</td>
+    <td style="border: 1px solid black">Game Profit</td>
+  </tr>
+  <tr style="border: 1px solid black">
+    <td style="border: 1px solid black"><%= @winnings %></td>
+    <td style="border: 1px solid black"><%= @loss %></td>
+    <td style="border: 1px solid black"><%= @profit %></td>
+  </tr>
+</table>
+</div>
+<p></p>
+<p>
+<div class = "all-game-result" style="top: 5vh">
+<table style="border: 1px solid black">
+  <tr style="border: 1px solid black">
+    <td style="border: 1px solid black">Total Win</td>
+    <td style="border: 1px solid black">Total Loss</td>
+    <td style="border: 1px solid black">Total Profit</td>
+  </tr>
+  <tr style="border: 1px solid black">
+    <td style="border: 1px solid black"><%= @totalWinnings %></td>
+    <td style="border: 1px solid black"><%= @totalLosses %></td>
+    <td style="border: 1px solid black"><%= @totalProfit %></td>
+  </tr>
+</table>
+</div>
+</p>
+<div class = "logout" style="top: 8vh">
+<form class="" action="http://localhost:4567/logout" method="post">
+  <input type="submit" name="" value="Logout">
+</form>
+</div>
+</div>
