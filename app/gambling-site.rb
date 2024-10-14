@@ -1,5 +1,3 @@
-# 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
-
 require 'sinatra'
 require './user'
 require 'digest'
