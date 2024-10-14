@@ -1,0 +1,8 @@
+{
+  "name": "Gambling site",
+  "description": "A gambling site app",
+  "image": "heroku/ruby",
+  "repository": "https://github.com/kunaljani1100/gambling-site",
+  "keywords": ["ruby", "sinatra" ],
+  "addons": ["heroku-sqlite"]
+}
